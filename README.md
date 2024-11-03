@@ -1,16 +1,24 @@
-# test_app_2024
+# Aplicación de Películas
 
-A new Flutter project.
+Esta es una aplicación de películas desarrollada en Flutter que permite a los usuarios ver una lista de películas populares y sus detalles, con opciones de filtrado por género y puntuación. La aplicación consume la API de [The Movie Database (TMDB)](https://www.themoviedb.org/) para obtener la información de las películas.
 
-## Getting Started
+## Desarrollador
 
-This project is a starting point for a Flutter application.
+- **Nombre**: Bayron Ordoñez
 
-A few resources to get you started if this is your first Flutter project:
+## Características
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Lista de Películas Populares**: Muestra un listado de películas populares obtenidas de la API de TMDB.
+- **Filtros**:
+  - Filtrar por **Puntuación Mínima**: Muestra solo películas con una puntuación mínima seleccionada.
+- **Detalles de Película**: Al seleccionar una película, muestra detalles adicionales como sinopsis, reparto y puntuación.
+- **Abrir Más Información en la Web**: Incluye un botón para realizar una búsqueda en Google de la película seleccionada.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Requisitos de Configuración
+
+1. **Archivo de Variables de Entorno (`.env`)**
+
+   Para que la aplicación funcione correctamente, se debe crear un archivo `.env` en la raíz del proyecto con la siguiente variable:
+
+   ```plaintext
+   API_KEY_TMDB=<TU_API_KEY_AQUI>
